@@ -1,0 +1,77 @@
+<style>
+/* 768 for tablet - desktop - 992 for desktop */
+@media screen and (min-width:768px) {
+ /* hide navigation */
+    .header-nav {
+    display: none;
+}
+/* Hide header button */
+.header-actions {
+    display: none;
+}
+/* show burger */
+.header-burger {
+  display: flex;
+flex: 1 0 100%;
+flex-direction: row-reverse;
+}
+/* Show overlay mobile menu */
+.header--menu-open .header-menu {
+opacity: 1;
+visibility: visible;
+}
+}
+  /* Swap Logo and Nav in Desktop */
+.header-display-desktop {
+    justify-content: space-between !important;
+}
+.header-title-nav-wrapper {
+    flex: 1 0 100%;
+    flex-direction: row-reverse;
+}
+/* Accordion Block Tabs Gradient Style */
+.accordion-item__description {
+   background: rgba(255,255,255, 0.8);
+    border-radius: 10px;
+  }
+/* Hiding Slideshow on Mobile */
+@media only screen and (max-width: 640px)
+{ section[data-section-id="61d5113a455f9d76eff2cdea"] .gallery-fullscreen-slideshow { 
+   display:none!important;
+  padding:0rem;
+  }
+  }
+
+ /* Hide the Acordion Icon */
+  .accordion-icon-container {
+    display: none !important;}
+
+/* Show Thumbnails on mobile for gallery slideshow simple */
+ .gallery-slideshow-thumbnails {
+    display: block !important;
+}
+/* Mobile Header Menu Lower Opacity */
+.header-menu .header-menu-bg 
+  {
+    opacity: .75;
+  }
+ /* Previous & Next Project Pagnation locked in place and put at the bottom */
+.item-pagination[data-collection-type^="portfolio"], .item-pagination[data-collection-type^="portfolio"] {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 15px;
+}
+.item-pagination-link .item-pagination-icon svg{
+    width: 18px;
+    height: 18px;
+}
+  .item-pagination-link .item-pagination-icon {
+    width: 15px;
+    height: 15px;
+}
+  .header .header-announcement-bar-wrapper {
+    padding: .5vw;
+  }
+</style>
